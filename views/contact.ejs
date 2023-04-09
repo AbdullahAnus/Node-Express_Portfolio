@@ -1,0 +1,97 @@
+<%- include('./partials/header.ejs')%>
+
+<div class="container-fluid bg-dark">
+  <div class="row">
+    <div class="col-md-2">
+      <%- include('./partials/sidebar.ejs' , {page_name : "Contact"})%>
+    </div>
+
+    <div class="col-md-10">
+      <!-- Main Content -->
+      <div class="container mt-5">
+        <h1 class="text-warning mb-5 border-bottom">Contact Us</h1>
+
+        <p class="mx-auto mb-5 text-white">
+          Do you have any questions? Please do not hesitate to contact. I will
+          come back to you within a matter of hours to help youy.
+        </p>
+        <div class="row">
+          <div class="col-md-6 mb-5 text-white">
+            <form method="post">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputName">Your Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="inputName"
+                    class="form-control mt-2"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="inputEmail">Your Email</label>
+                  <input type="email id="inputEmail" class="form-control mt-2
+                  required" name="email"/>
+                </div>
+                <div class="col-md-12">
+                  <label for="inputSubject">Your Subject</label>
+                  <input
+                    type="text"
+                    id="inputSubject"
+                    class="form-control mt-2"
+                    name="subject"
+                  />
+                </div>
+                <div class="col-md-12 mb-3">
+                  <label for="inputTextarea">Your Message</label>
+                  <textarea
+                    class="form-control mt-2"
+                    id="inputTextarea"
+                    required
+                    name="message"
+                  ></textarea>
+                </div>
+              </div>
+              <button class="btn btn-outline-warning" type="submit">
+                Send
+              </button>
+            </form>
+          </div>
+          <div class="col-md-4 text-center text-white">
+            <ul class="list-unstyled">
+              <li>
+                <i class="fa fa-map-market-alt fa-2x i-color"></i>
+                <p>196 A Al-Raheem Garden Lahore Pakistan</p>
+              </li>
+              <li>
+                <i class="fa fa-phone mt-4 fa-2x i-color"></i>
+                <p>+92 309 6758707</p>
+              </li>
+              <li>
+                <i class="fa fa-envelop mt-4 fa-2x i-color"></i>
+                <p>abdullahanusbutt601@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a href="/" target="_blank"
+          ><i class="fa-brands fa-facebook i-color mx-3"></i
+        ></a>
+        <a href="/" target="_blank"
+          ><i class="fa-brands fa-instagram i-color mx-3"></i
+        ></a>
+        <a href="/" target="_blank"
+          ><i class="fa-brands fa-linkedin i-color mx-3"></i
+        ></a>
+        <a href="/" target="_blank"
+          ><i class="fa-brands fa-twitter i-color mx-3"></i
+        ></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('./partials/footer.ejs')%>
